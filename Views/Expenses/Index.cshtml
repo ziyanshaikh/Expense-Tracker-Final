@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ExpenseTracker.Models.Expense>
+@*
+@{
+    ViewData["Title"] = "Index";
+}*@
+
+<div class="mainscreen">
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.ExpenseTitle)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.ExpenseAmount)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.ExpenseDescription)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.Category)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.Date)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) {
+        <tr>
+            <th scope="row">1</th>
+                <td>@Html.DisplayFor(modelItem => item.ExpenseTitle)</td>
+                <td>@Html.DisplayFor(modelItem => item.ExpenseAmount)</td>
+                <td>@Html.DisplayFor(modelItem => item.ExpenseDescription)</td>
+                <td>@Html.DisplayFor(modelItem => item.Category.CategoryName)</td>
+                <td>@Html.DisplayFor(modelItem => item.ExpenseDescription)</td>
+                <td>@Html.DisplayFor(modelItem => item.Date)</td>
+                <td>
+               
+                 <a asp-action="Edit" asp-route-id="@item.ExpenseId"><img src="~/img/imgedit.png" style="height:30px" /></a>
+                @*<a asp-action="Details" asp-route-id="@item.CategoryId">Details</a>*@
+
+                        <a asp-action="Delete" asp-route-ID="@item.ExpenseId" onclick="return confirm('Are you sure you wish to Delete these Expense?');"><img src="~/img/imgdelete.png" style="height:25px;margin-left:20px" /></a>
+                </td>
+        </tr>
+        }
+    </tbody>
+</table>
+    <p class="CreateButton">
+        <a asp-action="Create">Add Expense</a>
+    </p>
+</div>

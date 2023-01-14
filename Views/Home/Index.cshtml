@@ -1,0 +1,226 @@
+﻿@using ExpenseTracker.Models
+@*@model IEnumerable<ExpenseTracker.Models.Category>
+*@
+@model MultiModelData
+
+<section class="home" id="home">
+
+    <div class="home-text" data-aos="slide-left">
+
+        <img src="~/img/imghometext.png" />
+    </div>
+
+</section>
+
+<section class="about" id="about">
+    <div class="left-img" data-aos="slide-right">
+        <img src="./img/imgAbout.jpeg">
+    </div>
+
+    <div class="rightAbout">
+        <h1 data-aos="slide-left">Get to know us</h1>
+        <br>
+        <p data-aos="slide-left">
+            <b> Expense Tracker </b> also known as expense manager <br>
+            is a place which helps you keep track of how much you<br>
+            spend every day and on what.<br><br>
+            At the end of the month, you will have a clear picture<br>
+            where your money is going. <br><br>
+            This is one of the best ways to get your expenses under control<br>
+            and bring some semblance of order to your finances.
+            <br>
+    </div>
+
+</section>
+
+<section class="Categories-class" id="categories">
+    <div class="Cat">
+        <h1 data-aos="zoom-in">Categories</h1>
+
+        
+
+        <div class="main-table">
+            <table data-aos="zoom-in">
+                <tr> <th>Name</th><th>Limit</th></tr>
+                <tr><td>First</td><td>1000000</td><td><button><img src="./img/imgEdit.png"></button></td><td><button><img src="./img/imgDelete.png"></button></td></tr>
+                <tr><td>Second</td><td>100</td><td><button><img src="./img/imgEdit.png"></button></td><td><button><img src="./img/imgDelete.png"></button></td></tr>
+                <tr><td>Third</td><td>10000</td><td><button><img src="./img/imgEdit.png"></button></td><td><button><img src="./img/imgDelete.png"></button></td></tr>
+                <tr><td>Fourth</td><td>10000</td><td><button><img src="./img/imgEdit.png"></button></td><td><button><img src="./img/imgDelete.png"></button></td></tr>
+                <tr><td>Fifth</td><td>10000</td><td><button><img src="./img/imgEdit.png"></button></td><td><button><img src="./img/imgDelete.png"></button></td></tr>
+                <tr><td>sixth</td><td>10000</td><td><button><img src="./img/imgEdit.png"></button></td><td><button><img src="./img/imgDelete.png"></button></td></tr>
+            </table>
+        </div>
+    </div>
+    <div class="right-img">
+        <img data-aos="slide-left" src="./img/imgCategories.png">
+    </div>
+</section>
+
+<section class="detailSection">
+    <div class="mainDetail">
+        <div class="firstSection" data-aos="slide-right">
+            <div class="InnerSection">
+                <h1>Total Expense</h1>
+
+                <div>
+                    <h1>500000</h1>
+                </div>
+            </div>
+
+            <button>
+                Add Category
+            </button>
+        </div>
+        <div class="firstSection" data-aos="slide-left">
+            <div class="InnerSection">
+                <h1>Total Expense Limit</h1>
+
+                <div>
+                    <h1>30000</h1>
+                </div>
+
+            </div>
+            <button>
+                Add Expense
+            </button>
+        </div>
+
+    </div>
+
+
+</section>
+
+<section class="Expense-Class" id="expenses">
+
+    <h1 data-aos="zoom-in">Expenses</h1>
+
+    <!-- <div class="buttonClass">
+          <button data-aos="zoom-in">Add Expense</button>
+      </div>
+     -->
+    <div class="main-table">
+        <table data-aos="zoom-in">
+            <tr> <th>Name</th><th>Description</th><th>Category</th><th>Amount</th><th>Date</th></tr>
+            <tr><td>First</td><td>Vehicle</td><td>FirstCat</td><td>1000000</td><td>11/12/2022</td><td><button><img src="./img/imgEdit.png"></button></td><td><button><img src="./img/imgDelete.png"></button></td></tr>
+            <tr><td>First</td><td>Food</td><td>FirstCat</td><td>20000</td><td>13/12/2022</td><td><button><img src="./img/imgEdit.png"></button></td><td><button><img src="./img/imgDelete.png"></button></td></tr>
+            <tr><td>First</td><td>Medical</td><td>FirstCat</td><td>30000</td><td>11/12/2022</td><td><button><img src="./img/imgEdit.png"></button></td><td><button><img src="./img/imgDelete.png"></button></td></tr>
+            <tr><td>First</td><td>Transportation</td><td>FirstCat</td><td>5000</td><td>11/12/2022</td><td><button><img src="./img/imgEdit.png"></button></td><td><button><img src="./img/imgDelete.png"></button></td></tr>      
+   </table>
+        </div>
+
+</section>
+
+<section>
+
+    @*<table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Category Name
+                </th>
+                <th>
+                    Category Amount
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.myCategory)
+            {
+                <tr>
+                    <td>
+                        @item.CategoryName
+                       @* @Html.DisplayFor(modelItem => item.CategoryName)*@
+              @*      </td>
+                    <td>
+                        @item.CategoryAmount
+                        @* @Html.DisplayFor(modelItem => item.CategoryAmount
+               @*     </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.CategoryId">Edit</a>
+                        <a asp-action="Details" asp-route-id="@item.CategoryId">Details</a>
+                        <a asp-action="Delete" asp-route-ID="@item.CategoryId" onclick="return confirm('Are you sure you wish to Delete?');">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    @{
+        Html.RenderAction("Categorys");
+    }
+
+     @{
+         Html.RenderAction("expenses");
+     }*@
+
+</section>
+
+<section class="ContactClass" id="contactus">
+
+    <div class="contact-section">
+        <form data-aos="" method="post" action="">
+            <h1 data-aos="zoom-in">Contact Us</h1>
+            <div class="name-form">
+                <div class="First-name ">
+                    <div class="f-name">
+                        <label data-aos="zoom-in" for="name">First Name</label>
+                        <p data-aos="zoom-in">*</p>
+                    </div>
+                    <div class="name-box2">
+                        <img src="./img/icon/user.png" alt="">
+                        <input type="First Name" placeholder="First Name" name="FirstName" required>
+                    </div>
+                </div>
+                <div class="Last-name ">
+                    <div class="l-name">
+                        <label data-aos="zoom-in" for="name">Last Name</label>
+                        <p data-aos="zoom-in">*</p>
+                    </div>
+
+                    <div class="name-box2">
+                        <img src="./img/icon/user.png" alt="">
+                        <input type="text" placeholder="Last Name" name="LastName" required>
+                    </div>
+                </div>
+            </div>
+            <div class="Email-Section">
+                <div class="Email ">
+                    <div class="email">
+                        <label data-aos="zoom-in" for="Email">Email</label>
+                        <p data-aos="zoom-in"> *</p>
+                    </div>
+                    <div class="name-box2">
+                        <img src="./img/icon/email.png" alt="">
+                        <input type="email" name="Email" id="Email" placeholder="abcd@xyz" required>
+                    </div>
+
+                </div>
+                <div class="Mobile-number">
+                    <div class="M-number">
+                        <label data-aos="zoom-in" for="number">Mobile number</label>
+                        <p data-aos="zoom-in"> *</p>
+                    </div>
+                    <div class="name-box2">
+                        <img src="./img/icon/smartphone-call.png" alt="">
+                        <input type="number" placeholder="98980 98980" name="PhoneNumber" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Message">
+                <div class="Message0">
+                    <label  for="Message"> Message </label>
+                    <div class="message1">
+                        <textarea name="Message" placeholder="Write here"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="SUBMIT">
+            </div>
+
+        </form>
+        <div class="right-ContactImage" data-aos="slide-left">
+            <img src="./img/imgContact.png" alt="">
+        </div>
+</section>

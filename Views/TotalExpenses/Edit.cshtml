@@ -1,0 +1,47 @@
+﻿@model ExpenseTracker.Models.TotalExpense
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<div class="MainScreen" style="margin-top:100px">
+    <div class="topClass">
+        <div class="TopBar" data-aos="slide-right">
+            <div class="backSection">
+                <div>
+                    <button>
+                        <a asp-action="Index">
+                            <img src="~/img/imgback.png" />
+                        </a>
+
+                    </button>
+                </div>
+            </div>
+            <h4>Total Expense Limit</h4>
+        </div>
+
+        <div class="left-img" data-aos="slide-right">
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="TotalExpenseId" />
+            <div class="form-group">
+                <label asp-for="TotalExpenseLimit" class="control-label"></label>
+                <input asp-for="TotalExpenseLimit" class="form-control" />
+                <span asp-validation-for="TotalExpenseLimit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="Create" />
+            </div>
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

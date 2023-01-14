@@ -1,0 +1,872 @@
+/*//All Elements
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//Logo
+.store-logo {
+    display: flex !important;
+    gap: 0.5rem;
+}
+
+.store-logo img {
+    width: 149px;
+    height: 45px;
+}
+
+//Common
+h4 {
+    font-family: 'Lexend', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+}*/
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 1920px;
+    background-color: #ffffff;
+}
+
+header {
+    width: 100vw;
+    gap: 7.5rem;
+    background-color: rgba(0, 0, 0, 0.19);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+}
+
+    header img {
+        width: 300px;
+        height: 100px;
+    }
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+    .navbar ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* padding-top: 20px; */
+        gap: 2rem;
+    }
+
+    .navbar li {
+        list-style: none;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+/*  HomeSection*/
+
+.home {
+    background: url(../img/imgHomeBackground.png);
+    /* background: url(./img/imgBackground.jpeg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 670px;
+    position: relative;
+    width: 118%;
+    margin-left: -120px;
+}
+
+.home-text img {
+    color: white;
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    right: 10rem;
+    /* left:19rem;  */
+    top: 10rem;
+}
+/* .home-text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     gap: 1rem;
+     right:3rem;
+     top:10rem;
+  }*/
+
+/*  About Section*/
+
+.CreateCat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.8rem;
+    padding-top: 50px;
+    margin-bottom: 34px;
+    flex-direction:row;
+}
+.about {
+    /* background-color: #FFF4F3; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.8rem;
+    padding-top: 50px;
+    margin-bottom: 34px;
+}
+
+.left-img img {
+    width: 600px;
+    height: 518px
+}
+
+.rightAbout h1 {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 58px;
+}
+
+.rightAbout p {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.rightAbout .pre {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+
+/*Catgeories Section*/
+
+.Categories-class {
+    background: #0000801a;
+    display: flex;
+    align-items: :center;
+    justify-content: center;
+    gap: 2.8rem;
+    padding-top: 10px;
+    margin-bottom: 34px;
+}
+
+.Cat {
+    flex-direction: column;
+}
+
+.Categories-class h1 {
+    text-align: center;
+    color: #581845;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+
+.buttonClass button {
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: darkred;
+    height: 50px;
+    padding: 5px;
+    width: 300px;
+    cursor: pointer;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+.main-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: row;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 1em 1em;
+    margin: 10px;
+}
+
+.main-table th {
+    text-align: center;
+    color: darkred;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.main-table button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+}
+
+.main-table img {
+    height: 36px;
+    width: :36px;
+}
+
+
+.main-table td {
+    text-align: center;
+    color: #FAD02C;
+    /*    color: #FEDE00 ;*/
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.right-img img {
+    padding-top: 130px;
+    padding-left: :30px;
+    width: 600px;
+    height: 508px
+}
+
+
+/*Detail Section*/
+
+.detailSection {
+    /*    background: #0000801a;*/
+    width: 100vw;
+    height: 306px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainDetail {
+    /*    background: #E7F1FE;*/
+    /* background: #A4CAFA;*/
+
+    background: white;
+    display: flex;
+    align-items: :center;
+    justify-content: center;
+    gap: 1.0rem;
+    margin: 40px;
+    width:80%;
+    margin-bottom: 10px;
+    flex-direction: row;
+   /* width: 118%;
+    margin-left: -120px;*/
+}
+
+.firstSection {
+    display: flex;
+    align-items: :center;
+    justify-content: center;
+    width: 100vw;
+    
+    flex-direction: column;
+    text-align: center;
+
+}
+
+
+
+.CreateButton {
+    margin-top:20px;
+    padding-top:20px;
+}
+    .CreateButton a {
+        margin-top: 20px;
+        padding:10px;
+        height: 50px;
+        width: 200px;
+        background: white;
+        border-radius: 15px;
+        border: 2px solid black;
+        text-align: center;
+        text-decoration:none;
+        color: #862A51;
+        font-family: 'Lexend', sans-serifs;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+.mainscreen {
+    margin-top:100px;
+    padding-top:10px;
+}
+.firstSection button {
+    /* background: url(./img/imgGradient.png);
+        background-image: url('../img/imggradient.png');*/
+    height: 0px;
+    width: 0px;
+    background-color: transparent;
+    color: white;
+}
+
+.InnerSection {
+    /*background: url(../img/imgGradient.png);*/
+   
+    background-image: url('../img/imggradient.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    flex-direction: column;
+    width: 90%;
+    height: 150px;
+    margin: 20px;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+}
+
+    .InnerSection h1 {
+        text-align: center;
+        color: white;
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+/*  Expense Section*/
+
+.Expense-Class {
+    /*  background: #FDF19D;*/
+    background: #E7F1FE;
+    /* background: #A4CAFA;*/
+    /*     background: #FFEA9F ; */
+    display: flex;
+    align-items: :center;
+    justify-content: center;
+    gap: 1.0rem;
+    margin-bottom: 34px;
+    flex-direction: column;
+}
+
+    .Expense-Class h1 {
+        text-align: center;
+        color: #581845;
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+    }
+
+
+/*  Download App Section*/
+
+.download {
+    background-color: #3B4990;
+}
+
+.main-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0rem;
+    gap: 1rem;
+}
+
+.left-text-sec h1 {
+    font-family: 'Lexend', sans-serifs;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 58px;
+    color: white;
+}
+
+.left-text-sec h3 {
+    font-family: 'Lexend', sans-serifs;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 28px;
+    color: white;
+}
+
+.left-text-sec p {
+    font-family: 'Lexend', sans-serifs;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 25px;
+    color: white;
+}
+
+.left-text-sec h4 {
+    color: white;
+}
+
+.right-img-Download img {
+    width: 100%;
+    height: 400px;
+}
+
+
+/*Contact Section*/
+
+.ContactClass {
+    /* background-color: #FFFFFF; */
+    padding: 5rem 20rem;
+    /* width: 100vw; */
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-section {
+    margin-left: 60px;
+    /*margin-top: 3rem;*/
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContactClass h1 {
+    /*margin-top: 5rem;*/
+    font-family: 'Lexend', sans-serifs;
+    font-style: normal;
+    font-weight: 650;
+    font-size: 36px;
+    line-height: 58px;
+}
+
+.ContactClass p {
+    margin-top: -2px;
+    /* font-family:'Lexend', sans-serifs ;
+    font-style: normal;
+    font-weight: 650;
+    font-size: 36px;
+    line-height: 58px;
+  */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.name-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-family: 'Lexend', sans-serifs;
+    font-weight: bold;
+}
+
+.Email-Section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 20px;
+    font-family: 'Lexend', sans-serifs;
+}
+
+
+.First-name,
+.Last-name,
+.Email,
+.Mobile-number,
+.Message0 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.First-name,
+.Last-name,
+.Email,
+.Mobile-number,
+.Message0, label {
+    display: flex;
+    font-family: 'Lexend', sans-serifs;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.f-name,
+.l-name,
+.email,
+.M-number {
+    display: flex;
+}
+
+.name-box2 {
+    border: 0.5px solid #6363637d;
+    border-radius: 8px;
+    width: 253px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Lexend', sans-serifs;
+}
+
+    .name-box2 input {
+        width: 200px;
+        height: 40px;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-family: 'Lexend', sans-serifs;
+    }
+
+        .name-box2 input::placeholder {
+            color: #212529;
+            font-family: 'Lexend', sans-serifs;
+        }
+
+.Message {
+    padding-top: 30px;
+    font-family: 'Lexend', sans-serifs;
+}
+
+.message1 {
+    border: 0.5px solid #6363637d;
+    border-radius: 8px;
+    width: 545px;
+    height: 135px;
+    gap: 2rem;
+    font-family: 'Lexend', sans-serifs;
+}
+
+    .message1 textarea {
+        width: 500px;
+        height: 125px;
+        background: transparent;
+        border: none;
+        outline: none;
+        resize: none;
+        padding: 10px;
+        font-family: 'Lexend', sans-serifs;
+    }
+
+        .message1 textarea::placeholder {
+            color: #212529;
+        }
+
+.submit {
+    border: none;
+    font-family: 'Lexend', sans-serifs;
+    margin-top: 20px;
+}
+
+    .submit input {
+        color: #FAF9F6;
+        border: none;
+        font-size: 14px;
+        width: 111px;
+        background-color: #000080;
+        border-radius: 50px;
+        padding: 13px 30px;
+        cursor: pointer;
+    }
+
+    .CreateMainScreen {
+        flex-direction:row;
+    }
+.topClass 
+{
+    flex-direction:column;
+}
+
+.Create {
+    border: none;
+    font-family: 'Lexend', sans-serifs;
+    margin-top: 20px;
+    color: #FAF9F6;
+    border: none;
+    font-size: 14px;
+    width: 111px;
+    background-color: #862A51;
+    border-radius: 50px;
+    padding: 13px 30px;
+    cursor: pointer;
+}
+
+
+.right-ContactImage img {
+    width: auto;
+}
+
+
+/*Footer */
+
+footer {
+    background-color: black;
+    padding-top: 10px;
+    width: 100vw;
+    height: auto;
+    /*      position: relative;*/
+}
+
+
+.bottom-icon {
+    max-width: 1200px;
+    width: 71%;
+    margin: auto;
+    height: 130px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /*      background: transparent;*/
+}
+
+.left-text {
+    font-family: 'Lexend', sans-serifs;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 50px;
+    width: 455px;
+    color: #FAF9F6;
+}
+
+
+.icon-bar {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FAF9F6;
+    padding: 2pex 10px;
+}
+
+    .icon-bar a {
+        padding: 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #FAF9F6;
+    }
+
+.ft-legal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+}
+
+    .ft-legal h3 {
+        font-size: 13px;
+    }
+
+.footerLogo {
+    display: flex;
+    align-items: flex-end;
+    */
+    /*    text-align: right;*/ * /*/
+/*    justify-content: center;*/
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+    .footerLogo img {
+        width: 300px;
+        height: 100px;
+    }
+
+/*Add Category Section*/
+.AddCategory {
+    height: auto;
+    width: 100vw;
+    display: flex;
+}
+
+    .AddCategory top {
+        flex-direction: column;
+    }
+
+    .AddCategory h1 {
+        font-family: 'Lexend', sans-serifs;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: left;
+        /*    line-height: 58px;*/
+    }
+
+    .AddCategory h4 {
+        color: #862A51;
+        margin-left: 30px;
+        font-family: 'Lexend', sans-serifs;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        /*    line-height: 58px;*/
+    }
+
+    .AddCategory h3 {
+        color: #862A51;
+        /*  margin-left: 30px;*/
+        font-family: 'Lexend', sans-serifs;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        text-align: left;
+        /*    line-height: 58px;*/
+    }
+
+
+
+.SubmitClass button {
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+    background: white;
+    border-radius: 15px;
+    border: 2px solid black;
+    text-align: center;
+    color: #862A51;
+    font-family: 'Lexend', sans-serifs;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.EditIcon {
+    height:20px;
+    width:20px;
+}
+
+.TopBar {
+    flex-direction: row;
+    display: flex;
+    margin-bottom20px;
+}
+
+    .TopBar h4 {
+        font-family: 'Lexend', sans-serifs;
+        color: #862A51;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        text-align: left;
+            padding-top: 24px;
+        /*    padding: 20px;*/
+    }
+
+.backSection {
+    margin: 20px 20px 20px 0px;
+}
+
+    .backSection button {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .backSection img {
+        height: 50px;
+        width: 50px;
+    }
+
+/*Add Expense */
+
+
+.AddExpenseImg img {
+    margin: 100px 15px;
+    width: 450px;
+    height: 380px;
+    border-radius: 20px;
+}
+
+.AddCategoryImg img {
+    margin-top: 60px;
+    margin-left: 100px;
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+/*Expense List*/
+
+.CategoryLimitClass {
+    width: 80vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 15px;
+    margin: 20px;
+    flex-direction: row;
+}
+
+.CategoryLimit {
+    flex-direction: row;
+    display: flex;
+}
+
+.CategoryLimitClass h6 {
+    font-family: 'Lexend', sans-serifs;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    padding: 20px;
+}
+
+
+.CategoryLimitClass h4 {
+    font-family: 'Lexend', sans-serifs;
+    color: #862A51;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    padding: 20px;
+}
